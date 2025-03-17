@@ -1,4 +1,5 @@
 import { Button, Text, Box, Flex, hubspot } from "@hubspot/ui-extensions";
+import { GOOGLE_MAPS_API_KEY } from "./config.js";
 
 hubspot.extend(({ actions, context }) => <Extension actions={actions} context={context} />);
 
@@ -33,7 +34,7 @@ const Extension = ({ actions, context }) => {
 
       // Construct Google Maps URL
       const encodedAddress = encodeURIComponent(`${address}, ${city}, ${state} ${zip}`);
-      const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_API_KEY}&q=${encodedAddress}`;
+      const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${encodedAddress}`;
 
       // Open iFrame with map
       actions.openIframeModal({
