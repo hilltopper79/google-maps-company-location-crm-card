@@ -33,7 +33,7 @@ const Extension = ({ actions, context }) => {
 
       // Construct Google Maps URL
       const encodedAddress = encodeURIComponent(`${address}, ${city}, ${state} ${zip}`);
-      const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBOR4aRTh5R5B3M7r1BhSZBGIbKZHN_mwA&q=${encodedAddress}`;
+      const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_API_KEY}&q=${encodedAddress}`;
 
       // Open iFrame with map
       actions.openIframeModal({

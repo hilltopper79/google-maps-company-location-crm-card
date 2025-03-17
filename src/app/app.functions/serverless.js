@@ -17,7 +17,7 @@ exports.main = async (context) => {
       `https://api.hubapi.com/crm/v3/objects/companies/${hs_object_id}?properties=address,city,state,zip`,
       {
         headers: {
-          Authorization: `Bearer pat-na1-b33e3a18-1206-4b20-8f9d-19345e563b7c`,
+          Authorization: `Bearer ${context.env.HUBSPOT_API_KEY}`,
           "Content-Type": "application/json",
         },
       }
