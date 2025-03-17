@@ -1,0 +1,16 @@
+{
+  "name": "Dynamic iFrame Module",
+  "description": "This is a sample to show how to open a popup iframe modal from a custom card",
+  "scopes": ["crm.objects.companies.read", "crm.objects.companies.write", "cms.functions.read", "cms.functions.write", "files"],
+  "uid": "dynamic_iframe_modal_example_app",
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "extensions/iframe-modal-example-card.json"
+        }
+      ]
+    }
+  }
+}

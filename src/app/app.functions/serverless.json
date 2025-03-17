@@ -1,0 +1,8 @@
+{
+  "appFunctions": {
+    "getAddress": {
+      "file": "serverless.js",
+      "methods": ["GET"]
+    }
+  }
+}
