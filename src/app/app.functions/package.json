@@ -1,13 +1,13 @@
 {
-    "name": "fetchaddress",
-    "version": "1.0.0",
-    "description": "Serverless function for fetching a company address",
-    "main": "serverless.js",
-    "scripts": {
-        "start": "node serverless.js"
-    },
-    "dependencies": {
-        "@hubspot/api-client": "^12.0.1",
-        "node-fetch": "^2.6.7"
-    }
+  "name": "fetchaddress",
+  "version": "1.0.0",
+  "description": "Serverless function for fetching a company address",
+  "main": "serverless.js",
+  "scripts": {
+      "start": "node serverless.js"
+  },
+  "dependencies": {
+      "@hubspot/api-client": "^12.0.1",
+      "node-fetch": "^2.6.7"
+  }
 }
